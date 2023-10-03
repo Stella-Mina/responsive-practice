@@ -8,42 +8,49 @@
   background-color: #ff0000;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .blue-box {
   background-color: #0008ff;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .green-box {
   background-color: #22ff00;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .orange-box {
   background-color: #ff8400;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .green2-box {
   background-color: #00ff51;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .yellow-box {
   background-color: #d4ff00;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .pink-box {
   background-color: #ff00e1;
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 /* Q1 サイズ変更 */
@@ -88,6 +95,7 @@
 /* Q5 flexboxの入れ替え(逆順) */
 .flex-box {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -96,6 +104,20 @@
   text-align: center;
   line-height: 300px;
 }
+
+/* Q6 flexboxの入れ替え(指定) */
+.fb-change .green2-box {
+  order: 1;
+}
+
+.fb-change .yellow-box {
+  order: 2;
+}
+
+.fb-change .pink-box {
+  order: 3;
+}
+
 
 /* Q7 要素の表示・非表示 */
 .box-display .red-box {
